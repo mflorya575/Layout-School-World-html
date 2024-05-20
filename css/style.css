@@ -951,6 +951,16 @@ main {
   .teaser__box p {
     font-size: 18px;
   }
+  .lk__card-photo {
+    width: 120px;
+    height: 120px;
+  }
+  .lk__card {
+    gap: 20px;
+  }
+  .lk__card div h2 {
+    font-size: 18px;
+  }
 }
 .wallet ._section-btn {
   border-radius: 50px;
