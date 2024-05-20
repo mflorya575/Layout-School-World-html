@@ -912,6 +912,36 @@ main {
     width: 150px;
     height: 150px;
   }
+  .writeParents__box-search {
+    height: 50px;
+    margin-bottom: 30px;
+  }
+  .writeParents__box-search input {
+    font-size: 18px;
+  }
+  ._section-btn {
+    padding: 8px 70px;
+    font-size: 20px;
+  }
+  .writeParents__list {
+    margin-top: 70px;
+  }
+  .individual__box {
+    gap: 20px;
+  }
+  .writeParents__list-item .individual__box {
+    padding: 15px 15px;
+  }
+  .writeParents__list-item .lk__block img {
+    width: 130px;
+    height: 130px;
+  }
+  .writeParents__list-item .individual__box h2 {
+    font-size: 22px;
+  }
+  .writeParents__list-item .individual__box p {
+    font-size: 16px;
+  }
 }
 .wallet ._section-btn {
   border-radius: 50px;
