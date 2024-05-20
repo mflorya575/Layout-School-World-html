@@ -961,6 +961,30 @@ main {
   .lk__card div h2 {
     font-size: 18px;
   }
+  .cost__label {
+    margin-top: 50px;
+    padding: 30px;
+  }
+  .cost__label-title {
+    font-size: 18px;
+  }
+  .cost__label-t {
+    font-size: 14px;
+  }
+  .cost__list {
+    margin-top: 50px !important;
+  }
+  .cost__list li input {
+    font-size: 18px;
+    line-height: 180%;
+  }
+  .cost__add {
+    font-size: 18px;
+    padding: 25px 50px;
+  }
+  .cost__add svg {
+    margin-right: 20px;
+  }
 }
 .wallet ._section-btn {
   border-radius: 50px;
