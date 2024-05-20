@@ -323,3 +323,18 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .lk {
+        margin-top: 50px;
+    }
+	.lk__title {
+        font-size: 32px;
+    }
+    .lk__list li {
+        font-size: 18px;
+    }
+    .lk__list li:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
