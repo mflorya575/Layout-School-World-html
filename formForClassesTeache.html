@@ -15,16 +15,11 @@
     <div class="wrapper" id="root">
         <main class="main">
             <section class="form-page">
-                <div class="form-page__branch form-page__branch-one">
-                    <img src="./images/branch/branch5.png" alt="">
-                </div>
                 <div class="form-page__container">
 
                     <h1 class="form-page__title">Форма для учителей</h1>
 
-                    <form method="POST" id="teacher_form_subbmit" enctype='multipart/form-data'
-                        action="javascript:void(0)" class="form-page__form form__teachers">
-                        @csrf
+                    <form action="#" class="form-page__form form__teachers">
                         <div class="form-page__label">
                             <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -36,44 +31,41 @@
                             - обязательно для заполнения
                         </div>
 
-                        <div id="errors">
-
-                        </div>
-
                         <!-- фамилия -->
                         <div class="form-page__input">
-                            <input type="text" name="userSurname" id="userSurname" data-userSurname>
+                            <input type="text" id="userSurname">
                             <label for="userSurname">Фамилия <span>*</span></label>
                         </div>
 
                         <!-- Имя -->
                         <div class="form-page__input">
-                            <input type="text" name="userName" id="userName" data-userName>
+                            <input type="text" id="userName">
                             <label for="userName">Имя <span>*</span></label>
                         </div>
 
                         <!-- Отчество -->
                         <div class="form-page__input">
-                            <input type="text" name="userPatronymic" id="userPatronymic" data-userPatronymic>
+                            <input type="text" id="userPatronymic">
                             <label for="userPatronymic">Отчество <span>*</span></label>
                         </div>
 
+
                         <!-- № школы и адрес школы -->
                         <div class="form-page__input">
-                            <input type="text" name="schoolNumber" id="schoolNumber">
+                            <input type="text" id="schoolNumber">
                             <label for="schoolNumber">№ школы и адрес школы <span>*</span></label>
                         </div>
 
-                        <!--Предметы -->
+                        <!-- Предметы -->
                         <div class="form-page__input">
-                            <input type="text" name="disciplines" id="disciplines">
-                            <label for="disciplines">Предметы <span>*</span></label>
+                            <input type="text" id="subjects">
+                            <label for="subjects">Предметы <span>*</span></label>
                         </div>
 
-                        <!-- Классы -->
+                        <!-- Класс -->
                         <div class="form-page__input">
-                            <input type="text" name="classroom" id="classroom">
-                            <label for="class">Классы <span>*</span></label>
+                            <input type="text" id="class">
+                            <label for="class">Класс <span>*</span></label>
                         </div>
 
                         <!-- Область/Край/Республика -->
@@ -207,6 +199,7 @@
                         </div>
 
                         <button class="form-page__btn">Сохранить</button>
+
                     </form>
 
                 </div>
@@ -245,6 +238,11 @@
         })</script>
     <script src="./js/toggleFormPagePanel.js"></script>
     <script src="./js/formLabel.js"></script>
+    <script src="./js/docPhoto.js"></script>
+    @stack('parents.register')
+    @stack('students.register')
+    @stack('teachers.register')
+    @stack('teachers.register.dom')
 </body>
 
 </html>
