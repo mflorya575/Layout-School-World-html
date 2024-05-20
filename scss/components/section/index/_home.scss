@@ -1,0 +1,51 @@
+.home {
+    position: relative;
+
+    &__container {
+        min-height: 781px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__line {
+        background: #593929;
+        margin: 0 auto;
+        margin-top: 27px;
+        margin-bottom: 27px;
+        width: 60%;
+        max-width: 745px;
+        height: 1px;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 32px;
+        font-variant: small-caps;
+        text-align: center;
+        color: #545454;
+        font-family: $Montserrat;
+
+    }
+
+    &__branch {
+        position: absolute;
+        top: -69px;
+        right: 0;
+    }
+
+    @media (max-width: 768px) {
+        &__container {
+            min-height: 381px;
+        }
+        &__line {
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+        &__subtitle {
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+}

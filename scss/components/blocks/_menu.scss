@@ -1,0 +1,187 @@
+.menu {
+    &__body {
+        &:after {
+            display: none;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 39px;
+    }
+
+    &__item {
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__submenu {
+        position: absolute;
+        top: calc(100% + 75px);
+        left: -30%;
+
+        box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.25);
+        border-radius: 40px;
+        background: #f7f0e5;
+        min-width: 1200px;
+        z-index: 2000000000000;
+        padding: 130px 120px;
+        display: flex;
+        flex-direction: column;
+
+        li {
+            font-family: $defaultFonts;
+            font-weight: 400;
+            font-size: 72px;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            color: #171717;
+            text-align: left;
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-bottom: 61px;
+            }
+        }
+
+        &-dn {
+            flex-direction: column;
+            display: none;
+        }
+
+        &-dn._click {
+            display: flex;
+        }
+    }
+
+    &__submenu._students {
+        left: -289px;
+    }
+
+    &__submenu._students._vector {
+        &:after {
+            left: 289px;
+        }
+    }
+
+    &__submenu._teachers {
+        left: -468px;
+    }
+
+    &__submenu._teachers._vector {
+        &:after {
+            left: 468px;
+        }
+    }
+
+    &__submenu._study {
+        left: -468px;
+    }
+
+    &__submenu._study.study_in_school {
+        left: -601px;
+    }
+
+    &__submenu._study._vector.study_in_school {
+        &:after {
+            left: 601px;
+        }
+    }
+
+    &__submenu._study._vector {
+        &:after {
+            left: 468px;
+        }
+    }
+
+    &__submenu.regions {
+        width: 1470px;
+        left: -907px;
+
+        .regions__wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul {
+            width: 50%;
+            li {
+                font-weight: 400;
+                font-size: 36px;
+                color: #171717;
+                &:not(:last-child) {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+    &__submenu.regions._vector {
+        &::after {
+            left: 907px;
+        }
+    }
+
+    &__submenu._vector {
+        &::after {
+            left: 66px;
+        }
+    }
+
+    &__submenu._open {
+        display: flex;
+    }
+
+    &__icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .menu {
+        position: relative;
+
+        &__icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            width: 41px;
+
+            span {
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: #593929;
+            }
+        }
+
+        &__body {
+            display: none;
+            position: absolute;
+            white-space: nowrap;
+            box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.25), 2px 2px 2px 0 rgba(0, 0, 0, 0.25);
+            top: calc(100% + (61px));
+            right: 0;
+            z-index: 20000000000;
+            border-radius: 15px;
+            background: #f7f0e5;
+
+            &:after {
+                display: block;
+            }
+        }
+
+        &__body._open {
+            display: block;
+        }
+
+        &__list {
+            width: 100%;
+            display: flex;
+            padding: 30px 60px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}

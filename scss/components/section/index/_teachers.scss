@@ -1,0 +1,36 @@
+.teachers {
+    padding-bottom: 100px;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 	485px;
+        height: 545px;
+        z-index: -1;
+        display: block;
+        transform: rotate(-180deg);
+        background: url('../images/branch/branch2.webp') center center/contain no-repeat;
+        position: absolute;
+        top: -223px;
+        left: 0;
+    }
+    h2._section-title {
+        text-align: right;
+    }
+    &__branch {
+        position: absolute;
+        top: -237px;
+    }
+    &__list {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 30px;
+        li {
+            min-height: 420px;
+        }
+        @media (max-width: 1330px) {
+            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        }
+    }
+}
