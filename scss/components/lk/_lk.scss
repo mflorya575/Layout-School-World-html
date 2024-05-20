@@ -337,4 +337,21 @@
     .lk__list li:not(:last-child) {
         margin-bottom: 30px;
     }
+    ._section-main-title {
+        font-size: 32px;
+    }
+    .lk__card {
+        margin-top: 50px;
+    }
+    .lk__card div h2 {
+        font-size: 26px;
+    }
+    .lk__card div p {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .lk__card-photo {
+        width: 150px;
+        height: 150px;
+    }
 }
