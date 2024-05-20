@@ -19,7 +19,14 @@
 
                 <div class="header-lk__wrap">
 
-                    <a class="header__logo" href="./lk-student.html">
+                    <a href="./lk-student-my-teache.html">
+                        <svg width="40" height="16" viewBox="0 0 40 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.292893 7.29289C-0.0976295 7.68341 -0.0976296 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.928929C7.68054 0.538405 7.04738 0.538405 6.65685 0.928929L0.292893 7.29289ZM40 7L1 7L1 9L40 9L40 7Z"
+                                fill="#587202" />
+                        </svg>
+                    </a>
+                    <a class="header__logo" href="./index.html">
                         <svg width="119" height="142" viewBox="0 0 119 142" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -158,26 +165,27 @@
 
         <main class="main">
             <section class="lk">
-                <div class="lk__container">
+                <div class="individual__container">
 
-                    <h1 class="_section-main-title">
-                        Личный кабинет ученика
+                    <h1 class="lk__title">
+                        Ваш преподаватель
                     </h1>
 
-                    <div class="lk__card">
-                        <div class="lk__card-photo"></div>
-                        <div>
-                            <h2>Петров Егор Кирилович</h2>
+                    <div class="teaser__item individual _section-item-green">
+                        <div class="individual__box">
+                            <div class="lk__block"><img src="./images/about_img.webp" alt=""></div>
+                            <div class="teaser__box">
+                                <h2>Петров Егор Петрович</h2>
+                                <p>Астраханская область</p>
+                            </div>
                         </div>
+                        <ul>
+                            <li>Телефон</li>
+                            <li>E-mail</li>
+                            <li>Стоимость</li>
+                        </ul>
                     </div>
 
-                </div>
-                <div class="lk__list">
-                    <ul class="lk__container">
-                        <li>Электронный дневник</li>
-                        <li><a href="./lk-student-my-teache.html">Мои учителя</a></li>
-                        <li>Учёба онлайн</li>
-                    </ul>
                 </div>
             </section>
         </main>
@@ -289,6 +297,7 @@
             touchpadSupport: true,
         })</script>
     <script src="./js/headerLKBurger.js"></script>
+    <script src="./js/studentsAdd.js"></script>
 </body>
 
 </html>

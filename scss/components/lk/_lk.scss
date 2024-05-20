@@ -300,3 +300,26 @@
         }
     }
 }
+
+.myTeache{
+    &__list {
+        margin-top: 148px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &-item {
+            padding: 12px 21px;
+            position: relative;
+            a {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            .lk__block {
+                img {
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+}
