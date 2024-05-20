@@ -942,6 +942,15 @@ main {
   .writeParents__list-item .individual__box p {
     font-size: 16px;
   }
+  .myTeache__list {
+    margin-top: 70px;
+  }
+  .teaser__box h2 {
+    font-size: 24px;
+  }
+  .teaser__box p {
+    font-size: 18px;
+  }
 }
 .wallet ._section-btn {
   border-radius: 50px;
