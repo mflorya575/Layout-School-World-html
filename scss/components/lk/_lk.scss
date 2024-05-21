@@ -437,4 +437,26 @@
     .cost__list li {
         padding: 20px 40px;
     }
+    .individual .lk__block img {
+        width: 90px;
+        height: 90px;
+    }
+    .individual .teaser__box {
+        gap: 10px;
+    }
+    .teaser__box h2 {
+        font-size: 18px;
+    }
+    .teaser__box p {
+        font-size: 15px;
+    }
+    .individual {
+        padding: 30px;
+        margin-top: 40px;
+        gap: 0;
+    }
+    .individual ul {
+        gap: 10px;
+        font-size: 18px;
+    }
 }
