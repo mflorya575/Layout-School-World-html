@@ -134,7 +134,7 @@ main {
 
 ._section-main-title {
   font-weight: 400;
-  font-size: 156px;
+  font-size: 116px;
   letter-spacing: 0.02em;
   text-align: center;
   color: #587202;
@@ -149,7 +149,6 @@ main {
 }
 ._section-title {
   font-weight: 400;
-  padding-left: 89px;
   font-size: 96px;
   letter-spacing: 0.05em;
   color: #587202;
@@ -167,7 +166,6 @@ main {
   color: #545454;
 }
 ._section-list {
-  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(615px, 1fr));
   gap: 30px;
@@ -330,8 +328,68 @@ main {
 .home {
   position: relative;
 }
+.home::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 434px;
+  height: 414px;
+  right: 0;
+  background: url("../images/branch/branch1.png") center center/cover no-repeat;
+}
+@media (max-width: 1610px) {
+  .home::before {
+    top: 0px;
+    right: -10px;
+    background: url("../images/branch/branch1.png") center center/contain no-repeat;
+    width: 234px;
+    height: 214px;
+  }
+}
+@media (max-width: 768px) {
+  .home::before {
+    top: -20px;
+    width: 174px;
+    height: 154px;
+  }
+}
+.home::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 440px;
+  height: 645px;
+  left: -72px;
+  bottom: -330px;
+  background: url("../images/branch/branch.png") center center/contain no-repeat;
+}
+@media (max-width: 1610px) {
+  .home::after {
+    left: -117px;
+    bottom: -200px;
+    background: url("../images/branch/branch.png") center center/contain no-repeat;
+    width: 440px;
+    height: 445px;
+  }
+}
+@media (max-width: 768px) {
+  .home::after {
+    bottom: -70px;
+    left: -63px;
+    width: 240px;
+    height: 245px;
+  }
+}
+@media (max-width: 400px) {
+  .home::after {
+    bottom: -70px;
+    left: -80px;
+    width: 240px;
+    height: 190px;
+  }
+}
 .home__container {
-  min-height: 781px;
+  min-height: 581px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,11 +420,6 @@ main {
   text-align: center;
   color: #545454;
   font-family: "Montserrat", sans-serif;
-}
-.home__branch {
-  position: absolute;
-  top: -69px;
-  right: 0;
 }
 @media (max-width: 768px) {
   .home__container {
@@ -457,9 +510,61 @@ main {
 .services {
   padding: 100px 0;
   padding-bottom: 150px;
+  position: relative;
+}
+.services::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 434px;
+  height: 414px;
+  bottom: -278px;
+  left: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background: url("../images/branch/branch1.png") center center/contain no-repeat;
 }
 .services__list {
   margin-top: 100px;
+}
+@media (max-width: 1500px) {
+  .services::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 334px;
+    height: 314px;
+    bottom: -168px;
+    left: -10px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+@media (max-width: 1100px) {
+  .services::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 234px;
+    height: 214px;
+    bottom: -110px;
+    left: -10px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+@media (max-width: 992px) {
+  .services::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 174px;
+    height: 214px;
+    bottom: -110px;
+    left: -10px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
 }
 @media (max-width: 1330px) {
   .services__list li:nth-child(3) {
@@ -473,40 +578,28 @@ main {
   padding-bottom: 100px;
   position: relative;
 }
-.teachers::before {
-  content: "";
-  width: 485px;
-  height: 545px;
-  z-index: -1;
-  display: block;
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-  background: url("../images/branch/branch2.webp") center center/contain no-repeat;
-  position: absolute;
-  top: -223px;
-  left: 0;
-}
 .teachers h2._section-title {
   text-align: right;
 }
-.teachers__branch {
-  position: absolute;
-  top: -237px;
-}
 .teachers__list {
   margin-top: 100px;
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 992px) {
+  .teachers__list {
+    margin-top: 70px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .teachers__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .teachers__list li {
-  min-height: 420px;
-}
-@media (max-width: 1330px) {
-  .teachers__list {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-  }
+  max-width: 420px;
 }
 
 .blog__list {
@@ -1538,11 +1631,9 @@ main {
   display: flex;
 }
 .form-page__panel.col-1 {
-  -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
 }
 .form-page__panel.col-1._open {
-  display: -ms-grid;
   display: grid;
   overflow: auto;
   height: 100vh;
@@ -1605,9 +1696,7 @@ main {
   color: #000;
 }
 .footer ul.footer__container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (392px)[4];
   grid-template-columns: repeat(4, 392px);
 }
 .footer__line {
@@ -1653,7 +1742,6 @@ main {
 }
 @media (max-width: 1400px) {
   .footer ul.footer__container {
-    -ms-grid-columns: (392px)[2];
     grid-template-columns: repeat(2, 392px);
   }
   .footer__line {
@@ -1702,4 +1790,4 @@ main {
   .footer__wrapper div a {
     font-size: 18px;
   }
-}
+}/*# sourceMappingURL=style.css.map */

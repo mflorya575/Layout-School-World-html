@@ -1,8 +1,59 @@
 .home {
     position: relative;
 
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 434px;
+        height: 414px;
+        right: 0;
+        background: url('../images/branch/branch1.png') center center/cover no-repeat;
+        @media (max-width: 1610px) {
+            top: 0px;
+            right: -10px;
+            background: url('../images/branch/branch1.png') center center/contain no-repeat;
+            width: 234px;
+            height: 214px;
+        }
+        @media (max-width: 768px) {
+            top: -20px;
+            width: 174px;
+            height: 154px;
+        }
+    }
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 440px;
+        height: 645px;
+        left: -72px;
+        bottom: -330px;
+        background: url('../images/branch/branch.png') center center/contain no-repeat;
+        @media (max-width: 1610px) {
+            left: -117px;
+            bottom: -200px;
+            background: url('../images/branch/branch.png') center center/contain no-repeat;
+            width: 440px;
+            height: 445px;
+        }
+        @media (max-width: 768px) {
+            bottom: -70px;
+            left: -63px;
+            width: 240px;
+            height: 245px;
+        }
+        @media (max-width: 400px) {
+            bottom: -70px;
+            left: -80px;
+            width: 240px;
+            height: 190px;
+        }
+    }
+
     &__container {
-        min-height: 781px;
+        min-height: 581px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -27,12 +78,6 @@
         color: #545454;
         font-family: $Montserrat;
 
-    }
-
-    &__branch {
-        position: absolute;
-        top: -69px;
-        right: 0;
     }
 
     @media (max-width: 768px) {
