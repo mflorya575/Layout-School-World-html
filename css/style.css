@@ -1211,6 +1211,9 @@ main {
   .individual__box {
     gap: 0;
   }
+  .individual ul {
+    font-size: 16px;
+  }
 }
 .wallet ._section-btn {
   border-radius: 50px;
