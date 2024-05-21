@@ -1214,6 +1214,29 @@ main {
   .individual ul {
     font-size: 16px;
   }
+  .form-page__container .form-page__title {
+    font-size: 32px;
+  }
+  .form-page__form .form-page__label {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .form-page__form .form-page__input {
+    height: 80px;
+    font-size: 18px;
+  }
+  .form-page__form .form-page__input input {
+    font-size: 16px;
+  }
+  .form-page__form .form-page__input label {
+    font-size: 16px;
+  }
+  .form-page__form .form-page__btn {
+    font-size: 18px;
+    margin-top: 0;
+    padding: 10px 20px;
+  }
 }
 .wallet ._section-btn {
   border-radius: 50px;
