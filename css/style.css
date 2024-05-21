@@ -1161,6 +1161,13 @@ main {
         -ms-flex-align: center;
             align-items: center;
   }
+  .lk .lk__container ._label__box {
+    height: 405px;
+  }
+  .lk .lk__container ._label__box p {
+    font-size: 18px;
+    margin-bottom: 150px;
+  }
 }
 .wallet ._section-btn {
   border-radius: 50px;
