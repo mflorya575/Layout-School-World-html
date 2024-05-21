@@ -1,6 +1,17 @@
 .footer {
     padding-bottom: 65px;
     margin-top: 100px;
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 434px;
+        height: 414px;
+        top: -100px;
+        right: 0;
+        background: url('../images/branch/branch2.png') center center/cover no-repeat;
+    }
 
     &__container {
         display: flex;
@@ -55,7 +66,7 @@
         right: 0;
     }
     &-index {
-        padding-top: 381px;
+        padding-top: 99px;
     }
 
     position: relative;
@@ -80,16 +91,21 @@
             align-items: center;
             gap: 20px;
         }
-
-        &__container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
     }
 }
 
 @media (max-width: 768px) {
+    .footer {
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 234px;
+            height: 214px;
+            top: 0px;
+            right: 0;
+        }
+    }
     .footer__container li a {
         font-size: 18px;
     }
