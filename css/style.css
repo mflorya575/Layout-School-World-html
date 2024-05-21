@@ -1131,6 +1131,36 @@ main {
   .lk__wrap ul li a {
     font-size: 18px;
   }
+  .wallet__card {
+    margin-top: 40px;
+  }
+  .wallet__card-title {
+    font-size: 30px;
+  }
+  .wallet__card-balance {
+    font-size: 34px;
+  }
+  ._section-btn {
+    font-size: 18px;
+  }
+  .wallet__history li .wallet__history-box {
+    display: -ms-grid;
+    display: grid;
+  }
+  .wallet__history-name {
+    font-size: 18px;
+  }
+  .wallet__history-disciplines {
+    font-size: 18px;
+  }
+  .wallet__history li ._section-btn {
+    padding: 5px 50px;
+    font-size: 18px;
+    margin-left: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .wallet ._section-btn {
   border-radius: 50px;
