@@ -992,7 +992,10 @@ main {
 
 @media (max-width: 1310px) {
   .lk__container .db__list.regions {
-    display: block;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .lk__container .db__list {
     margin-top: 40px;

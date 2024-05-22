@@ -326,7 +326,8 @@
 
 @media (max-width: 1310px) {
     .lk__container .db__list.regions {
-        display: block;
+        display: grid;
+        grid-template-columns: 1fr;
     }
     .lk__container .db__list {
         margin-top: 40px;
