@@ -1247,6 +1247,20 @@ main {
     margin-top: 0;
     padding: 10px 20px;
   }
+  .lk__container ul {
+    margin-top: 40px;
+    padding: 30px 40px;
+    height: 100%;
+    width: 89%;
+    font-size: 24px;
+  }
+  ._section-title {
+    font-size: 24px;
+  }
+  .lk__container ul {
+    margin-top: 10px;
+    padding: 10px;
+  }
 }
 .wallet ._section-btn {
   border-radius: 50px;
