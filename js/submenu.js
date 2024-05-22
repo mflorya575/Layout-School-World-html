@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Добавляем обработчик клика для каждого пункта меню
     menuItems.forEach(function(item) {
-        item.addEventListener('click', function(event) {
+        item.addEventListener('click', function() {
             // Закрываем все подменю
             closeAllSubmenus();
 
@@ -13,16 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
             if (submenu) {
                 submenu.style.display = 'block';
             }
-
-            // Проверяем, есть ли ссылка внутри пункта меню
-            var link = item.querySelector('a');
-            if (link && !submenu) {
-                // Переходим по ссылке
-                window.location = link.href;
-            }
-
-            // Отменяем действие по умолчанию (переход по ссылке)
-            event.preventDefault();
         });
     });
 
@@ -33,4 +23,14 @@ document.addEventListener("DOMContentLoaded", function() {
             submenu.style.display = 'none';
         });
     }
+
+    // Обработчик события клика на document для закрытия подменю при клике вне него
+    document.addEventListener("click", function(event) {
+        var target = event.target;
+        
+        // Проверяем, является ли цель клика подменю или пунктом меню
+        if (!target.closest('.menu__submenu') && !target.closest('.menu__item')) {
+            closeAllSubmenus();
+        }
+    });
 });
