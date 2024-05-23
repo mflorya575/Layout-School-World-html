@@ -106,13 +106,23 @@
             right: 0;
         }
     }
+    .footer__container {
+        display: grid;
+        justify-content: center;
+    }
+    .footer__label img {
+        display: block;
+        margin: 0 auto;
+    }
     .footer__container li a {
         font-size: 18px;
     }
     .footer__wrapper div p {
         font-size: 18px;
+        text-align: center;
     }
     .footer__wrapper div a {
         font-size: 18px;
+        text-align: center;
     }
 }
