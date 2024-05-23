@@ -1,17 +1,30 @@
 .lk {
     margin-top: 100px;
+    position: relative;
 
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 434px;
+        height: 414px;
+        top: 0;
+        left: 0;
+        background: url('../images/branch/branch3.png') center center/contain no-repeat;
+    }
+    
     &__container {
         max-width: 1095px;
     }
-
+    
     &__title {
         font-weight: 400;
-        font-size: 96px;
+        font-size: 92px;
         line-height: 120%;
         letter-spacing: 0.02em;
         text-align: center;
         color: #587202;
+        margin-bottom: 240px;
     }
 
     &__card {
@@ -22,7 +35,6 @@
         color: #545454;
         font-weight: 600;
         justify-content: center;
-        margin-top: 150px;
 
         &-photo {
             background: #ff9d82;
@@ -128,7 +140,7 @@
         width: 101px;
         height: 92px;
         position: relative;
-
+        
         img {
             width: 100%;
             height: 100%;
@@ -142,6 +154,67 @@
             width: 100%;
             height: 100%;
             opacity: 0;
+        }
+    }
+    @media (max-width: 1500px) {
+        &__title {
+            margin-bottom: 100px;
+            font-size: 62px;
+        }
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 334px;
+            height: 314px;
+            left: -10px;
+        }
+        &__card {
+    
+            &-photo {
+                border-radius: 25px;
+                width: 110px;
+                height: 110px;
+            }
+    
+            h2 {
+                font-size: 26px;
+            }
+    
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+    @media (max-width: 1100px) {
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 234px;
+            height: 214px;
+            left: -10px;
+        }
+    }
+    @media (max-width: 992px) {
+        &::before {
+            display: none;
+        }
+        &__card {
+    
+            &-photo {
+                border-radius: 10px;
+                width: 50px;
+                height: 50px;
+            }
+    
+            h2 {
+                font-size: 26px;
+            }
+    
+            p {
+                font-size: 18px;
+            }
         }
     }
 }
@@ -439,8 +512,8 @@
         font-size: 18px;
     }
     .lk__card-photo {
-        width: 120px;
-        height: 120px;
+        width: 80px;
+        height: 80px;
     }
     .lk__card  {
         gap: 20px;
