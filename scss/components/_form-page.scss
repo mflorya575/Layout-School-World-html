@@ -76,6 +76,7 @@
                 color: #fb3c29;
             }
 
+
         }
 
         input[type='file'] {
@@ -132,16 +133,24 @@
         width: 100%;
         box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.25);
         border-radius: 40px;
-        padding: 15px 0;
+        padding: 15px 20px;
         background: #f7f0e5;
         font-weight: 400;
         font-size: 40px;
         line-height: 200%;
         display: none;
 
+        @media screen and (max-width: 600px) {
+            font-size: 14px;
+        }
+
         ul {
             li {
                 cursor: pointer;
+
+                @media screen and (max-width: 600px) {
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -152,27 +161,29 @@
 
     &__panel.col-1 {
         grid-template-columns: repeat(2, 1fr);
+        height: 466px;
+        overflow: auto;
     }
 
     &__panel.col-1._open {
         display: grid;
-        overflow: auto;
-        height: 100vh;
     }
 
-    &__branch{
+    &__branch {
         &-one {
             position: absolute;
             top: 0;
             left: 0;
         }
+
         &-two {
-           position: absolute;
-           bottom: 0;
-           right: 0;
+            position: absolute;
+            bottom: 0;
+            right: 0;
         }
     }
 }
+
 .lock {
     overflow: hidden;
 }

@@ -126,6 +126,7 @@ main {
   width: 64px;
   height: 111px;
   background: url("../images/vector.webp") center center/contain no-repeat;
+  z-index: 200000000000000;
 }
 
 .signupLKParent {
@@ -1306,10 +1307,10 @@ main {
     font-size: 18px;
   }
   .form-page__form .form-page__input input {
-    font-size: 16px;
+    font-size: 14px;
   }
   .form-page__form .form-page__input label {
-    font-size: 16px;
+    font-size: 14px;
   }
   .form-page__form .form-page__btn {
     font-size: 18px;
@@ -1612,7 +1613,6 @@ main {
   background: #f7f0e5;
   min-width: 1200px;
   z-index: 2000000000000;
-  padding: 130px 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1621,10 +1621,15 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.menu__submenu-box {
+  padding: 60px 40px;
+  height: 60vh;
+  overflow: auto;
+}
 .menu__submenu li {
   font-family: "Bad Script", sans-serif;
   font-weight: 400;
-  font-size: 72px;
+  font-size: 52px;
   line-height: 120%;
   letter-spacing: 0.02em;
   color: #171717;
@@ -1934,15 +1939,25 @@ main {
   -webkit-box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.25);
   border-radius: 40px;
-  padding: 15px 0;
+  padding: 15px 20px;
   background: #f7f0e5;
   font-weight: 400;
   font-size: 40px;
   line-height: 200%;
   display: none;
 }
+@media screen and (max-width: 600px) {
+  .form-page__panel {
+    font-size: 14px;
+  }
+}
 .form-page__panel ul li {
   cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .form-page__panel ul li {
+    font-size: 14px;
+  }
 }
 .form-page__panel._open {
   display: -webkit-box;
@@ -1951,11 +1966,11 @@ main {
 }
 .form-page__panel.col-1 {
   grid-template-columns: repeat(2, 1fr);
+  height: 466px;
+  overflow: auto;
 }
 .form-page__panel.col-1._open {
   display: grid;
-  overflow: auto;
-  height: 100vh;
 }
 .form-page__branch-one {
   position: absolute;
