@@ -685,3 +685,10 @@
         padding: 20px 30px;
     }
 }
+
+@media (max-width: 500px) {
+    .wrapper-form::after {
+        width: 175px;
+        height: 345px;
+    }
+}
