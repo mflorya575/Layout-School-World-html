@@ -2012,6 +2012,31 @@ main {
   overflow: hidden;
 }
 
+.wrapper-form {
+  padding-bottom: 100px;
+  position: relative;
+}
+.wrapper-form::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 314px;
+  height: 214px;
+  background: url("../images/branch/branch-form.png") center center/contain no-repeat;
+}
+.wrapper-form::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+  width: 349px;
+  height: 397px;
+  background: url("../images/branch/branch-form2.png") center center/contain no-repeat;
+}
+
 .logout {
   overflow: hidden;
   height: 100vh;
