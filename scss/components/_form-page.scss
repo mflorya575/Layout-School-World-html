@@ -164,6 +164,22 @@
         height: 466px;
         overflow: auto;
     }
+    &__panel.call {
+        flex-direction: column;
+        li {
+            max-width: 336px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &::after {
+                content: '';
+                display: block;
+                width: 25px;
+                height: 25px;
+                background-color: #D9D9D9;
+            }
+        }
+    }
 
     &__panel.col-1._open {
         display: grid;
