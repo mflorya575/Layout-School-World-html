@@ -1492,6 +1492,12 @@ main {
     padding: 20px 30px;
     margin-top: 20px;
   }
+  .writeParents__list-item .individual__box h2 {
+    font-size: 14px;
+  }
+  .writeParents__list-item .individual__box p {
+    font-size: 12px;
+  }
 }
 @media (max-width: 500px) {
   .wrapper-form::after {
