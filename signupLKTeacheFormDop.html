@@ -12,12 +12,9 @@
 </head>
 
 <body>
-    <div class="wrapper wrapper-form" id="root">
+    <div class="wrapper wrapper-form wrapper-form-reg" id="root">
         <main class="main">
             <section class="form-page">
-                <div class="form-page__branch form-page__branch-one">
-                    <img src="./images/branch/branch5.png" alt="">
-                </div>
                 <div class="form-page__container">
 
                     <h1 class="form-page__title">Дополнительная информация об учителе</h1>
@@ -59,15 +56,17 @@
                                 <span>*</span></label>
                         </div>
 
-                        <!-- Скан паспорта (включая прописку) -->
                         <div class="form-page__input">
-                            <input type="file" id="passportScan" data-upload-photo name="passportScan">
+                            <div class="form-page__img" id="passportImages"></div>
+                            <input type="file" id="passportScan" data-upload-photo name="passportScan" multiple
+                                accept="image/*">
                             <label for="passportScan">Скан паспорта (включая прописку) <span>*</span></label>
                         </div>
 
-                        <!-- Скан диплома -->
                         <div class="form-page__input">
-                            <input type="file" id="diplomaScan" data-upload-photo name="diplomaScan">
+                            <div class="form-page__img" id="diplomaImages"></div>
+                            <input type="file" id="diplomaScan" data-upload-photo name="diplomaScan" multiple
+                                accept="image/*">
                             <label for="diplomaScan">Скан диплома <span>*</span></label>
                         </div>
 
@@ -109,9 +108,38 @@
             // Поддержка тачпада
             touchpadSupport: true,
         })</script>
+    <script>
+        document.getElementById('passportScan').addEventListener('change', function (event) {
+            handleFiles(event.target.files, 'passportImages', 3);
+        });
+
+        document.getElementById('diplomaScan').addEventListener('change', function (event) {
+            handleFiles(event.target.files, 'diplomaImages', 10);
+        });
+
+        function handleFiles(files, imageContainerId, maxFiles) {
+            const imageContainer = document.getElementById(imageContainerId);
+            imageContainer.innerHTML = '';
+
+            const filesArray = Array.from(files).slice(0, maxFiles);
+
+            filesArray.forEach(file => {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    imageContainer.appendChild(img);
+                };
+                reader.readAsDataURL(file);
+            });
+
+            if (files.length > maxFiles) {
+                alert(`Можно загрузить не более ${maxFiles} фото`);
+            }
+        }
+    </script>
     <script src="./js/toggleFormPagePanel.js"></script>
     <script src="./js/formLabel.js"></script>
-    <script src="./js/docPhoto.js"></script>
 </body>
 
 </html>

@@ -8,7 +8,7 @@
 
     &__title {
         font-weight: 400;
-        font-size: 96px;
+        font-size: 66px;
         line-height: 200%;
         text-align: center;
         color: #587202;
@@ -27,6 +27,8 @@
     &__input {
         border: 2.48px solid #9bb189;
         border-radius: 41px;
+        display: flex;
+        align-items: center;
         height: 115px;
         position: relative;
         cursor: pointer;
@@ -37,18 +39,15 @@
         color: #191919;
 
         img {
-            width: 120px;
-            height: 100%;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
             border-radius: 41px;
+            overflow: hidden;
         }
 
         input {
             padding: 20px;
             padding-left: 33px;
             width: 100%;
+            overflow: hidden;
             height: 100%;
             background: transparent;
 
@@ -97,6 +96,17 @@
             top: 50%;
             transform: translateY(-50%);
             left: 33px;
+        }
+    }
+
+    &__img {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 100%;
+        img {
+            width: 120px;
+            height: 100%;
         }
     }
 
@@ -226,5 +236,20 @@
         width: 349px;
         height: 397px;
         background: url('../images/branch/branch-form2.png') center center/contain no-repeat;
+    }
+}
+.wrapper-form-reg {
+    padding: 100px 0;
+    &::before {
+        content: '';
+        width: 114px;
+        height: 114px;
+        top: -18px;
+    }
+    &::after {
+        content: '';
+        width: 149px;
+        height: 197px;
+        bottom: -40px;
     }
 }

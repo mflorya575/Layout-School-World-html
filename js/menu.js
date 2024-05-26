@@ -3,7 +3,9 @@ const menu = () => {
     const menuIcon = document.querySelector('.menu__icon');
 
     menuIcon.addEventListener('click', () => {
-        menuBody.classList.toggle('_open')
+        menuBody.classList.toggle('_open');
+        menuIcon.classList.toggle('active');
+        document.querySelector('body').classList.toggle('_lock');
     })
 }
 menu();

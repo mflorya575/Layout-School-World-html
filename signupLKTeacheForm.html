@@ -12,12 +12,9 @@
 </head>
 
 <body>
-    <div class="wrapper wrapper-form" id="root">
+    <div class="wrapper wrapper-form wrapper-form-reg" id="root">
         <main class="main">
             <section class="form-page">
-                <div class="form-page__branch form-page__branch-one">
-                    <img src="./images/branch/branch5.png" alt="">
-                </div>
                 <div class="form-page__container">
 
                     <h1 class="form-page__title">Регистрация учителя</h1>
@@ -72,8 +69,51 @@
 
                         <!--Предметы -->
                         <div class="form-page__input">
-                            <input type="text" name="disciplines" id="disciplines">
-                            <label for="disciplines">Предметы <span>*</span></label>
+                            <span class="form-page__input_text"></span>
+                            <label for="Subject">Предметы <span>*</span></label>
+                            <div id="Subject" class="form-page__panel col-1">
+                                <ul>
+                                    <li>Русский язык</li>
+                                    <li>Родной язык</li>
+                                    <li>Чистописание</li>
+                                    <br>
+                                    <li>Родная литература</li>
+                                    <li>Литература</li>
+                                    <li>Азбука</li>
+                                    <li>Литературное чтение</li>
+                                    <br>
+                                    <li>Математика</li>
+                                    <li>Алгебра</li>
+                                    <li>Геометрия</li>
+                                    <br>
+                                    <li>Английский язык</li>
+                                    <li>Немецкий язык</li>
+                                    <li>Французский язык</li>
+                                    <li>Испанский язык</li>
+                                    <li>Китайский язык</li>
+                                    <br>
+                                    <li>История</li>
+                                    <li>Обществознание</li>
+                                    <li>Экономика</li>
+                                </ul>
+                                <ul>
+                                    <li>Химия</li>
+                                    <li>Биология</li>
+                                    <li>Ботаника</li>
+                                    <li>Физика</li>
+                                    <li>Экология</li>
+                                    <li>География</li>
+                                    <li>Естествознание</li>
+                                    <li>Астрономия</li>
+                                    <li>Окружающий мир</li>
+                                    <br>
+                                    <li>Информатика</li>
+                                    <li>Компьютерное программирование</li>
+                                    <li>Шахматы</li>
+                                    <li>Музыка</li>
+                                    <li>Основы безопасности жизнедеятельности</li>
+                                </ul>
+                            </div>
                         </div>
 
                         <!-- Классы -->
@@ -238,14 +278,14 @@
 
                         <!-- ИНН -->
                         <div class="form-page__input">
-                            <input type="text" name="userINN" id="userINN">
+                            <input type="text" maxlength="11" name="userINN" id="userINN">
                             <label for="userINN">ИНН <span>*</span></label>
                         </div>
 
                         <!-- Загрузить фото -->
                         <div class="form-page__input">
+                            <div class="form-page__img" id="formPageImg"></div>
                             <input type="file" name="userUploadPhoto" id="userUploadPhoto" data-upload-photo>
-                            <img />
                             <label for="userUploadPhoto">Загрузить фото <span>*</span></label>
                         </div>
 
@@ -294,7 +334,9 @@
         })</script>
     <script src="./js/toggleFormPagePanel.js"></script>
     <script src="./js/formLabel.js"></script>
-    <script src="./js/docPhoto.js"></script>
+    <script src="./js/prewievImg.js"></script>
+    <script src="./js/jqueri.min.js"></script>
+    <script src="./js/inputMask.js"></script>
 </body>
 
 </html>
