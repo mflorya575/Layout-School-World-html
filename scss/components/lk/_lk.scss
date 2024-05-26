@@ -448,6 +448,7 @@
     }
 	.lk__title {
         font-size: 32px;
+        margin-bottom: 40px;
     }
     .lk__list li {
         font-size: 18px;
@@ -593,13 +594,14 @@
     .lk__wrap ul li a {
         font-size: 18px;
     }
-    .wallet__card {
+    .lk__container .wallet__card {
         margin-top: 40px;
+        padding: 20px 50px;
     }
-    .wallet__card-title {
+    .wallet__card .wallet__card-title {
         font-size: 30px;
     }
-    .wallet__card-balance {
+    .wallet__card .wallet__card-balance {
         font-size: 34px;
     }
     ._section-btn {
@@ -609,14 +611,14 @@
         display: grid;
     }
     .wallet__history-name {
-        font-size: 18px;
+        font-size: 14px;
     }
     .wallet__history-disciplines {
-        font-size: 18px;
+        font-size: 14px;
     }
     .wallet__history li ._section-btn {
-        padding: 5px 50px;
-        font-size: 18px;
+        padding: 5px 30px;
+        font-size: 14px;
         margin-left: 40px;
         align-items: center;
     }
