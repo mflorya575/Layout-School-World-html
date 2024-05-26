@@ -522,28 +522,30 @@
     .lk__card div h2 {
         font-size: 18px;
     }
-    .cost__label {
+    .lk__container .cost__label {
         margin-top: 50px;
         padding: 30px;
+        line-height: 90%;
     }
     .cost__label-title {
         font-size: 18px;
     }
-    .cost__label-t {
+    .cost__label .cost__label-t {
         font-size: 14px;
     }
     .cost__list {
         margin-top: 50px !important;
     }
-    .cost__list li input {
+    .cost__list li div input {
         font-size: 18px;
         line-height: 180%;
     }
-    .cost__add {
+    .lk__container .cost__add {
         font-size: 18px;
-        padding: 25px 50px;
+        padding: 20px 30px;
+        margin-top: 30px;
     }
-    .cost__add svg {
+    .lk__container .cost__add svg {
         margin-right: 20px;
     }
     .cost__add {
@@ -553,8 +555,8 @@
     .cost__add svg {
         margin-right: 20px;
     }
-    .cost__list li {
-        padding: 20px 40px;
+    .lk__container .cost__list li {
+        padding: 20px 20px;
     }
     .individual .lk__block img {
         width: 90px;
@@ -685,6 +687,21 @@
     .lk__container .db__list {
         letter-spacing: 9px;
         padding: 20px 30px;
+    }
+}
+
+@media (max-width: 550px) {
+    .cost__label-title {
+        font-size: 14px;
+    }
+    .cost__list li div input {
+        font-size: 14px;
+        line-height: 160%;
+    }
+    .lk__container .cost__add {
+        font-size: 14px;
+        padding: 20px 30px;
+        margin-top: 20px;
     }
 }
 
