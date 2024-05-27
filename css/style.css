@@ -707,6 +707,7 @@ main {
 }
 .teachers__list li {
   max-width: 420px;
+  height: 400px;
 }
 
 .blog__list {
@@ -2420,6 +2421,9 @@ main {
   color: #000;
 }
 .footer__label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2433,6 +2437,15 @@ main {
       -ms-flex-align: end;
           align-items: flex-end;
   gap: 8px;
+  padding-right: 40px;
+}
+.footer__copy {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 .footer__branch {
   position: absolute;

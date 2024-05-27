@@ -50,14 +50,27 @@
         font-variant: none;
         color: #000;
     }
-
+    
     &__label {
+        font-family: $Montserrat;
+        font-weight: 300;
+        font-size: 24px;
         display: flex;
         flex-direction: column;
         margin-left: auto;
         margin-top: 20px;
         align-items: flex-end;
         gap: 8px;
+        padding-right: 40px;
+    }
+    
+    &__copy {
+        margin-top: 20px;
+        font-family: $Montserrat;
+        font-weight: 300;
+        font-size: 24px;
+        text-align: center;
+        font-family: $Montserrat;
     }
 
     &__branch {
