@@ -28,6 +28,7 @@
         border: 2.48px solid #9bb189;
         border-radius: 41px;
         display: flex;
+        overflow: hidden;
         align-items: center;
         height: 115px;
         position: relative;
@@ -111,6 +112,7 @@
     }
 
     &__input[data-panel] {
+        overflow: visible;
         label {
             cursor: pointer;
         }
