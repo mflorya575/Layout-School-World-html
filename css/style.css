@@ -167,7 +167,6 @@ main {
   color: #545454;
 }
 ._section-list {
-  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(615px, 1fr));
   gap: 30px;
@@ -692,21 +691,17 @@ main {
 .teachers__list {
   margin-top: 100px;
   gap: 30px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
   grid-template-columns: repeat(3, 1fr);
 }
 @media (max-width: 992px) {
   .teachers__list {
     margin-top: 70px;
-    -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 500px) {
   .teachers__list {
-    -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -1155,9 +1150,7 @@ main {
 
 @media (max-width: 1310px) {
   .lk__container .db__list.regions {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
   .lk__container .db__list {
@@ -1249,6 +1242,9 @@ main {
   .lk__card-photo {
     width: 150px;
     height: 150px;
+  }
+  .lk__container {
+    padding: 0;
   }
   .writeParents__box-search {
     height: 50px;
@@ -1357,6 +1353,12 @@ main {
     gap: 10px;
     font-size: 18px;
   }
+  .lk {
+    margin-bottom: 100px;
+  }
+  .lk__box {
+    width: 100%;
+  }
   .lk__box .lk__title {
     font-size: 20px;
   }
@@ -1366,9 +1368,13 @@ main {
   .lk__wrap {
     margin-top: 40px;
     gap: 20px;
-  }
-  .lk__wrap ul li {
-    height: 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .lk__wrap ul li a {
     font-size: 18px;
@@ -1381,13 +1387,22 @@ main {
     font-size: 30px;
   }
   .wallet__card .wallet__card-balance {
-    font-size: 34px;
+    font-size: 22px;
   }
   ._section-btn {
     font-size: 18px;
   }
+  .wallet__history li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
   .wallet__history li .wallet__history-box {
-    display: -ms-grid;
     display: grid;
   }
   .wallet__history-name {
@@ -1399,7 +1414,7 @@ main {
   .wallet__history li ._section-btn {
     padding: 5px 30px;
     font-size: 14px;
-    margin-left: 40px;
+    margin-left: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1473,6 +1488,7 @@ main {
   .lk__container ul {
     margin-top: 10px;
     padding: 10px;
+    width: 100%;
   }
   .lk__container .db__list {
     letter-spacing: 9px;
@@ -1729,9 +1745,7 @@ main {
   height: 100%;
 }
 .db__list.regions {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 50px 1fr;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
   font-size: 26px;
@@ -2072,24 +2086,6 @@ main {
   color: #545454;
   max-width: 641px;
 }
-._label__box:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 273px;
-  height: 464px;
-  background: url("../images/branch/branch__label1.png");
-}
-._label__box::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 273px;
-  height: 464px;
-  background: url("../images/branch/branch__label2.png");
-}
 
 .form-page {
   position: relative;
@@ -2256,7 +2252,6 @@ main {
   display: flex;
 }
 .form-page__panel.col-1 {
-  -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
   height: 466px;
   overflow: auto;
@@ -2287,7 +2282,6 @@ main {
   background-color: #D9D9D9;
 }
 .form-page__panel.col-1._open {
-  display: -ms-grid;
   display: grid;
 }
 .form-page__branch-one {
@@ -2400,9 +2394,7 @@ main {
   color: #000;
 }
 .footer ul.footer__container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (392px)[4];
   grid-template-columns: repeat(4, 392px);
 }
 .footer__line {
@@ -2448,7 +2440,6 @@ main {
 }
 @media (max-width: 1400px) {
   .footer ul.footer__container {
-    -ms-grid-columns: (392px)[2];
     grid-template-columns: repeat(2, 392px);
   }
   .footer__line {
@@ -2486,7 +2477,6 @@ main {
     right: 0;
   }
   .footer__container {
-    display: -ms-grid;
     display: grid;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2507,4 +2497,4 @@ main {
     font-size: 18px;
     text-align: center;
   }
-}
+}/*# sourceMappingURL=style.css.map */

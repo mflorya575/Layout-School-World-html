@@ -19,24 +19,5 @@
             color: #545454;
             max-width: 641px;
         }
-
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 273px;
-            height: 464px;
-            background: url('../images/branch/branch__label1.png');
-        }
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 273px;
-            height: 464px;
-            background: url('../images/branch/branch__label2.png');
-        }
     }
 }
