@@ -39,7 +39,7 @@
                         </div>
 
 
-
+                        
                         <!-- фамилия -->
                         <div class="form-page__input">
                             <input name="userSurname" type="text" id="userSurname" data-userSurname>
@@ -78,6 +78,7 @@
 
                         <!-- Область/Край/Республика -->
                         <div class="form-page__input" data-panel id="posClick">
+                            <input type="hidden" name="position">
                             <span class="form-page__input_text"></span>
                             <label for="position">Область/Край/Республика <span>*</span></label>
                             <div id="position" class="form-page__panel col-1">
@@ -195,6 +196,8 @@
 
                         <!-- Как с вами могут связаться родители? -->
                         <div class="form-page__input" data-panel>
+                        <input type="hidden" name="parentContact">
+
                             <span class="form-page__input_text"></span>
                             <label for="parentContact">Как с вами могут связаться родители? <span>*</span></label>
                             <ul id="parentContact" class="form-page__panel call">

@@ -17,6 +17,7 @@ function toggleFormPagePanel() {
             let formPagePanelItem = formPagePanel.querySelectorAll('li');
             formPagePanelItem.forEach((panelItem) => {
                 panelItem.addEventListener('click', () => {
+                    item.querySelector('input[type=hidden]').value = panelItem.textContent;
                     item.querySelector('span.form-page__input_text').textContent = panelItem.textContent;
                     item.querySelector('label').style.display = 'none';
                     setTimeout(() => {
